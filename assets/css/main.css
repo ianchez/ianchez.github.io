@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2120,6 +2121,14 @@ input, select, textarea {
 			display: none;
 		}
 
+		.icon.cv {
+			display: inline-block;
+			font-size: 0.8em;
+			height: inherit;
+			line-height: inherit;
+			letter-spacing: 0.2em;
+		}
+
 		.icon:before {
 			line-height: inherit;
 		}
@@ -3159,6 +3168,10 @@ input, select, textarea {
 			#header .logo:active strong {
 				background-color: #53e3fb;
 			}
+
+		#header a {
+			margin-right: 10px;
+		}
 
 		#header nav {
 			display: -moz-flex;
