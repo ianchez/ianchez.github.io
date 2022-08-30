@@ -3967,3 +3967,12 @@ input, select, textarea {
 	float: right;
 	padding-right: 12vw;
 }
+
+.repo-link {
+	float: right;
+	font-size: 16px;
+}
+
+.repo-link a {
+	color:#37a6cb;
+}
