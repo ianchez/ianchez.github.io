@@ -6,6 +6,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+			}
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -48,28 +78,74 @@
 										<h1 class="">Web Apps Showcase</h1>
 									</header>
 
+									<!-- The dots/circles -->
+									<div style="text-align:center">
+										<span class="dot active" onclick="currentSlide(1)"></span>
+										<span class="dot" onclick="currentSlide(2)"></span>
+									</div>
+
 									<!-- <span class="image main"><img src="images/pic11.jpg" alt="" /></span> -->
 
-									<h3>GIT HISTORY APP</h3>
-									<p>
-										This SPA (Single Page Application) is made with React - Typescript - Redux on the FrontEnd<br/>
-										And NestJS (Typescript) - Sequelize - MySQL on the Backend
-									</p>
-									<p>
-										You can choose a Github repository to show its commits history<br/>
-										By default the page is showing its own repo history, but you can choose whichever repo you want, <b>give it a try!</b></p>
+									<div class="slideshow-container">
 
-									<iframe
-										width="100%"
-										height="600"
-										scrolling="auto"
-										frameborder="no"
-										src="https://git-history-app.herokuapp.com/">
-									</iframe>
-									<span class="repo-link">
-										Check the repository: 
-										<a href="https://github.com/Ianchez/git-history-app">https://github.com/Ianchez/git-history-app</a>
-									</span>
+										<!-- Full-width images with number and caption text -->
+										<div class="mySlides fade" style="display: block;">
+											<div class="numbertext">1 / 2</div><br/>
+											<h3>GIT HISTORY APP</h3>
+											<p>
+												This SPA (Single Page Application) is made with React - Typescript - Redux on the FrontEnd<br/>
+												And NestJS (Typescript) on the Backend
+											</p>
+											<p>
+												You can choose a Github repository to show its commits history<br/>
+												By default the page is showing its own repo history, but you can choose whichever repo you want, <b>give it a try!</b>
+											</p>
+											
+											<div class="iframe-loader">
+												<iframe
+												width="100%"
+												height="600"
+												scrolling="auto"
+												frameborder="no"
+													src="https://git-history-app.herokuapp.com/">
+												</iframe>
+											</div>
+											<span class="repo-link">
+												Check the repository: 
+												<a href="https://github.com/Ianchez/git-history-app">https://github.com/Ianchez/git-history-app</a>
+											</span>
+										</div>
+									
+										<div class="mySlides fade">
+											<div class="numbertext">2 / 2</div><br/>
+											<h3>SHOPPING CART</h3>
+											<p>
+												This SPA (Single Page Application) is made with React - Javascript on the FrontEnd<br/>
+											</p>
+											<p>
+												The idea its to manage a shopping cart experience, allowing to add as many items as you want<br/>
+												The challenge was to handle the different states of the items added to the cart<br/>
+												The total would get calculated, applying the discount rules, <b>give it a try!</b>
+											</p>
+											<iframe
+												width="100%"
+												height="600"
+												scrolling="auto"
+												frameborder="no"
+												src="https://movie-challenge-react.vercel.app/01">
+											</iframe>
+											<span class="repo-link">
+												Check the repository: 
+												<a href="https://github.com/Ianchez/git-history-app">https://github.com/Ianchez/git-history-app</a>
+											</span>
+										</div>
+									
+										<!-- Next and previous buttons -->
+										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+									</div>
+
+
 									<br/>
 									<br/>
 
