@@ -3991,7 +3991,7 @@ input, select, textarea {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev-button, .next-button {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -4008,7 +4008,7 @@ input, select, textarea {
 }
 
 /* Position the "next button" to the right */
-.next {
+.next-button {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
