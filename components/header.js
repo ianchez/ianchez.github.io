@@ -4,7 +4,7 @@ document.write(`
     <a href="https://github.com/ianchez" class="icon brands fa-github"><span class="label">Github</span></a>
     <a href="https://www.linkedin.com/in/sebastian-sanchez-ianchez/?locale=en_US" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
     <a href="https://soundcloud.com/ianchez" class="icon brands fa-soundcloud"><span class="label">Soundcloud</span></a>
-    <a href="https://ianchez.notion.site/Sebastian-Sanchez-Pe-a-beffebdcf4414be28128e2dfdd5cb7c4" class="icon cv"><i class="fas fa-user-tie"></i><span>cv</span></a>
+    <a href="https://ianchez.notion.site/Sebasti-n-S-nchez-Pe-a-80866b9f0add4b22a4fdd5175939a2cd?pvs=4" class="icon cv"><i class="fas fa-user-tie"></i><span>cv</span></a>
     <nav>
       <a href="#menu">Menu</a>
     </nav>
