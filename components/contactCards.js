@@ -2,6 +2,13 @@ document.write(`
   <section id="contact">
     <div class="inner">
       <section>
+        <div class="contact-method">
+          <span class="icon solid alt fa-envelope"></span>
+          <h3>Email</h3>
+          <a href="#">contact@ianchez.com</a>
+        </div>
+      </section>
+      <section>
         <!--  <form method="post" action="#">
           <div class="fields">
             <div class="field half">
@@ -22,25 +29,6 @@ document.write(`
             <li><input type="reset" value="Clear" /></li>
           </ul>
         </form> -->
-      </section>
-      <section class="split">
-        <section>
-          <div class="contact-method">
-            <span class="icon solid alt fa-envelope"></span>
-            <h3>Email</h3>
-            <a href="#">contact@ianchez.com</a>
-          </div>
-        </section>
-        <section>
-          <div class="contact-method">
-            <span class="icon solid alt fa-home"></span>
-            <h3>Location</h3>
-            <span>
-              Santiago,<br />
-              Chile<br />
-            </span>
-          </div>
-        </section>
       </section>
     </div>
   </section>
