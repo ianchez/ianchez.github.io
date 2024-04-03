@@ -24,8 +24,10 @@
 				let i;
 				let slides = document.getElementsByClassName("mySlides");
 				let dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {slideIndex = 1}
-				if (n < 1) {slideIndex = slides.length}
+
+				if (n > slides.length) {slideIndex = 1} // Circular slide - right
+				if (n < 1) {slideIndex = slides.length} // Circular slide - left
+
 				for (i = 0; i < slides.length; i++) {
 					slides[i].style.display = "none";
 				}
@@ -136,7 +138,7 @@
 											</span>
 										</div>
 
-										<div class="mySlides fade" style="display: block;">
+										<div class="mySlides fade">
 											<div class="numbertext">2 / 4</div><br/>
 											<h3>Mario-like Game using Javascript</h3>
 											<p>
