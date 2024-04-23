@@ -3390,7 +3390,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 6em 0 2em 0 ;
+		padding: 2em 0 2em 0 ;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -3486,7 +3486,7 @@ input, select, textarea {
 				}
 
 		#banner.major {
-			height: 75vh;
+			height: 50vh;
 			min-height: 30em;
 			max-height: 50em;
 		}
